@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bookmarks HelloWorld</title>
-    <meta name="description" content="你可以使用 git reset 命令来将 HEAD 指针移动到之前的提交，从而撤销之后的提交。在使用 git reset 时，有三种模式可以选择：">
+    <title>一、把脉：国内外研究格局（用来“定向”而不是背新闻） HelloWorld</title>
+    <meta name="description" content="下面这套“从基础到发表”的深度学习学习与研究路线，兼顾国内外研究现状与生态，目标是：能系统学习 → 快速复现 → 做出可发表的小改进 → 完成规范论文与开源复现。">
     <link rel="stylesheet" type="text/css" href="../css/main.css?v=1.31.0">
     <link rel="stylesheet" type="text/css" href="../css/tocbot.css?v=1.31.0">
     <link rel="stylesheet" type="text/css" href="../css/media.css?v=1.31.0">
@@ -32,7 +32,7 @@
         </div>
       </article>
     </header>
-    <div class="warpper-content warpper sidebar">
+    <div class="warpper-content warpper sidebar notocs">
       <div class="sidebar-border">
         <aside class="sidebar" role="navigation">
           <div>
@@ -40,104 +40,127 @@
             <a href="../Bookmark/bookmark.html" class="">bookmark</a>
             <a href="../算法(C++)/算法.html" class="">算法</a>
             <a href="../Docker/指令.html" class="">Docker</a>
-            <a href="git.html" class="">Git</a>
+            <a href="../git/git.html" class="">Git</a>
             <a href="../AI/stable-diffusion.html" class="">Stable Diffusion</a>
-            <a href="../QAQ/DeepLearning学习路线.html" class="">Deep Learning学习路线</a>
+            <a href="DeepLearning学习路线.html" class="">Deep Learning学习路线</a>
           </div>
         </aside>
       </div>
       <markdown-style>
-        <h2 id="git-基础用法"><a aria-hidden="true" tabindex="-1" href="#git-基础用法" class="anchor"><span class="icon icon-link"></span></a>Git 基础用法</h2>
-        <pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line line-number" line="1"><span class="token function">git</span> init <span class="token comment">#创建新的仓库</span>
-</span><span class="code-line line-number" line="2"><span class="token function">git</span> remote origin <span class="token function">add</span> https://XXXXX.github.io
-</span><span class="code-line line-number" line="3">或者
-</span><span class="code-line line-number" line="4"><span class="token function">git</span> clone https://XXXXX.github.io <span class="token comment"># 相当于上面两步</span>
-</span><span class="code-line line-number" line="5">
-</span><span class="code-line line-number" line="6"><span class="token comment">## 第一次修改文件后</span>
-</span><span class="code-line line-number" line="7"><span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>
-</span><span class="code-line line-number" line="8"><span class="token function">git</span> commit <span class="token parameter variable">-m</span> <span class="token string">"备注"</span>
-</span><span class="code-line line-number" line="9"><span class="token function">git</span> push origin main
-</span><span class="code-line line-number" line="10">
-</span><span class="code-line line-number" line="11"><span class="token comment">## 之后每次修改文件后</span>
-</span><span class="code-line line-number" line="12"><span class="token function">git</span> pull <span class="token comment">## 多的这一步防止代码冲突。多人协作使用git fetch &#x26; git merge, 先不用在意</span>
-</span><span class="code-line line-number" line="13"><span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>
-</span><span class="code-line line-number" line="14"><span class="token function">git</span> commit <span class="token parameter variable">-m</span> <span class="token string">"备注"</span>
-</span><span class="code-line line-number" line="15"><span class="token function">git</span> push origin main
-</span></code><input type="hidden" value="git init #创建新的仓库
-git remote origin add https://XXXXX.github.io
-或者
-git clone https://XXXXX.github.io # 相当于上面两步
-
-## 第一次修改文件后
-git add .
-git commit -m &#x22;备注&#x22;
-git push origin main
-
-## 之后每次修改文件后
-git pull ## 多的这一步防止代码冲突。多人协作使用git fetch &#x26; git merge, 先不用在意
-git add .
-git commit -m &#x22;备注&#x22;
-git push origin main
-"><div onclick="copied(this)" class="copied"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
-        <h2 id="git更改远程仓库地址"><a aria-hidden="true" tabindex="-1" href="#git更改远程仓库地址" class="anchor"><span class="icon icon-link"></span></a>Git更改远程仓库地址</h2>
-        <p><code>git remote set-url origin "http://xxx.xxx.git"</code></p>
-        <h2 id="git回滚"><a aria-hidden="true" tabindex="-1" href="#git回滚" class="anchor"><span class="icon icon-link"></span></a>Git回滚</h2>
-        <h3 id="1-使用-git-reset"><a aria-hidden="true" tabindex="-1" href="#1-使用-git-reset" class="anchor"><span class="icon icon-link"></span></a>1. 使用 <code>git reset</code></h3>
-        <p>你可以使用 <code>git reset</code> 命令来将 HEAD 指针移动到之前的提交，从而撤销之后的提交。在使用 <code>git reset</code> 时，有三种模式可以选择：</p>
+        <p>下面这套“<strong>从基础到发表</strong>”的深度学习学习与研究路线，兼顾国内外研究现状与生态，目标是：能系统学习 → 快速复现 → 做出可发表的小改进 → 完成规范论文与开源复现。</p>
+        <hr>
+        <h1 id="一把脉国内外研究格局用来定向而不是背新闻"><a aria-hidden="true" tabindex="-1" href="#一把脉国内外研究格局用来定向而不是背新闻" class="anchor"><span class="icon icon-link"></span></a>一、把脉：国内外研究格局（用来“定向”而不是背新闻）</h1>
         <ul>
-          <li><code>--soft</code>：仅移动 HEAD 指针，保留更改在暂存区中。</li>
-          <li><code>--mixed</code>：移动 HEAD 指针，并重置暂存区，但保留更改在工作区中。</li>
-          <li><code>--hard</code>：移动 HEAD 指针，并重置暂存区和工作区，丢弃所有未提交的更改。</li>
+          <li><strong>全球趋势</strong>：基础模型（LLM/多模态）、扩散模型、效率与可复现性（对齐、蒸馏、量化、LoRA、推理成本控制）等是近两年主线；监管与安全在学术与产业中权重持续上升。建议把“能力—算力—数据—治理”当作观察四象限。(<a href="https://hai-production.s3.amazonaws.com/files/hai_ai_index_report_2025.pdf?utm_source=chatgpt.com">hai-production.s3.amazonaws.com</a>)</li>
+          <li><strong>国内侧重</strong>：产业落地和开源生态（如 PaddlePaddle、MindSpore）发展快；政策与治理研究同步推进。做研究既要关注全球前沿，也要懂本土生态与算力/数据可得性。(<a href="https://www.paddlepaddle.org.cn/?utm_source=chatgpt.com">paddlepaddle.org.cn</a>)</li>
+          <li><strong>投向定位</strong>：投稿渠道以国际顶会/期刊为主（如 NeurIPS/ICML/ICLR、CVPR/ICCV/ECCV、ACL/EMNLP 等），可参考 CCF 推荐目录来识别不同领域与层级。(<a href="https://www.ccf.org.cn/Academic_Evaluation/By_category/?utm_source=chatgpt.com">ccf.org.cn</a>)</li>
         </ul>
-        <pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line line-number" line="1"><span class="token function">git</span> log  <span class="token comment"># 查看提交历史，找到你想要回滚到的提交的哈希值</span>
-</span><span class="code-line line-number" line="2"><span class="token function">git</span> reset <span class="token parameter variable">--hard</span> <span class="token operator">&#x3C;</span>commit-hash<span class="token operator">></span>  <span class="token comment"># 使用 --hard 模式回滚</span>
-</span></code><input type="hidden" value="git log  # 查看提交历史，找到你想要回滚到的提交的哈希值
-git reset --hard <commit-hash>  # 使用 --hard 模式回滚
-"><div onclick="copied(this)" class="copied"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
-        <h3 id="2-使用-git-revert"><a aria-hidden="true" tabindex="-1" href="#2-使用-git-revert" class="anchor"><span class="icon icon-link"></span></a>2. 使用 <code>git revert</code></h3>
-        <p>另一种方法是使用 <code>git revert</code> 命令来创建一个新的提交，撤销之前的提交的更改。这种方法会保留提交历史。</p>
-        <pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line line-number" line="1"><span class="token function">git</span> log  <span class="token comment"># 查看提交历史，找到你想要撤销的提交的哈希值</span>
-</span><span class="code-line line-number" line="2"><span class="token function">git</span> revert <span class="token operator">&#x3C;</span>commit-hash<span class="token operator">></span>  <span class="token comment"># 创建一个新的提交来撤销之前的提交的更改</span>
-</span></code><input type="hidden" value="git log  # 查看提交历史，找到你想要撤销的提交的哈希值
-git revert <commit-hash>  # 创建一个新的提交来撤销之前的提交的更改
-"><div onclick="copied(this)" class="copied"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
-        <h3 id="3-使用-git-checkout"><a aria-hidden="true" tabindex="-1" href="#3-使用-git-checkout" class="anchor"><span class="icon icon-link"></span></a>3. 使用 <code>git checkout</code></h3>
-        <p>如果你只是想要撤销工作区的更改，可以使用 <code>git checkout</code> 命令。</p>
-        <pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line line-number" line="1"><span class="token function">git</span> checkout -- <span class="token operator">&#x3C;</span>file<span class="token operator">></span>  <span class="token comment"># 撤销指定文件的更改</span>
-</span></code><input type="hidden" value="git checkout -- <file>  # 撤销指定文件的更改
-"><div onclick="copied(this)" class="copied"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
-        <p>或者，如果你想要撤销所有更改，可以使用：</p>
-        <pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line line-number" line="1"><span class="token function">git</span> checkout <span class="token builtin class-name">.</span>
-</span></code><input type="hidden" value="git checkout .
-"><div onclick="copied(this)" class="copied"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
-        <p>这会撤销所有未暂存的更改，但不会影响已经暂存的更改或提交。</p>
-        <p>无论你选择哪种方法，都要记得在进行任何回滚操作之前先进行备份或者确认，以避免意外丢失重要更改。</p>
+        <hr>
+        <h1 id="二总体框架四层能力--一条研究工作流"><a aria-hidden="true" tabindex="-1" href="#二总体框架四层能力--一条研究工作流" class="anchor"><span class="icon icon-link"></span></a>二、总体框架（四层能力 + 一条研究工作流）</h1>
+        <p>
+          <strong>Layer 0（地基）：数学 + 编程 + 工具链</strong>
+          线代/概率/最优化的“够用派”复习；Python/NumPy/Pandas；<strong>首选 PyTorch</strong>（生态最全），了解 TensorFlow/JAX；Git、Conda/Docker、Linux 与可视化/实验跟踪（W&#x26;B/MLflow）。(<a href="https://pytorch.org/?utm_source=chatgpt.com">PyTorch</a>)
+        </p>
+        <p>
+          <strong>Layer 1（内功）：深度学习核心</strong>
+          从感知机→CNN→RNN/序列→注意力与Transformer→训练技巧（初始化、归一化、正则、优化器与 LR 调度、数据增广、早停）→评测与误差分析。教材建议用 <strong>D2L（动手可跑）</strong> 配合自己的最小项目。(<a href="https://www.d2l.ai/chapter_introduction/index.html?utm_source=chatgpt.com">d2l.ai</a>)
+        </p>
+        <p><strong>Layer 2（分轨）：方向化模块</strong></p>
+        <ul>
+          <li>CV：分类/检测/分割、ViT/扩散，数据与评测（COCO、mAP、Dice 等）。</li>
+          <li>NLP：预训练/指令微调/检索增强、评测（BLEU、ROUGE、MMLU 等）。</li>
+          <li>生成式/多模态：扩散/对齐、视觉-语言任务与评测。</li>
+          <li>
+            强化学习/图学习/推荐等（按导师与资源择其一深化）。
+            （此层的策略是“先复现+稳基线，再做<strong>可度量的小改进</strong>”。）
+          </li>
+        </ul>
+        <p>
+          <strong>Layer 3（发表）：研究方法与写作规范</strong>
+          选题 → 基线复现 → 方案设计 → 消融与对照 → 可信评测 → <strong>可复现发布</strong>（代码/权重/脚本/随机种子）→ 论文与附录。撰写遵循顶会的可复现与伦理清单（如 NeurIPS Checklist/Ethics）。(<a href="https://neurips.cc/Conferences/2025/CallForPapers?utm_source=chatgpt.com">NeurIPS</a>)
+        </p>
+        <p>
+          <strong>贯穿的研究工作流（循环迭代）</strong>
+          <strong>读文献（3-pass）→ 复现（最小可用）→ 改进（一个点）→ 实证 → 写作 → 反馈</strong>。读论文建议采用 Keshav 的“三遍法”，并结构化做笔记与证据表。(<a href="https://ccr.sigcomm.org/online/files/p83-keshavA.pdf?utm_source=chatgpt.com">ccr.sigcomm.org</a>)
+        </p>
+        <hr>
+        <h1 id="三24-周可执行路线每-4-周一个里程碑"><a aria-hidden="true" tabindex="-1" href="#三24-周可执行路线每-4-周一个里程碑" class="anchor"><span class="icon icon-link"></span></a>三、24 周可执行路线（每 4 周一个里程碑）</h1>
+        <blockquote>
+          <p>适合“边学边产出”的硕士节奏；如你基础薄弱，可把每阶段再拉长 2–4 周。</p>
+        </blockquote>
+        <p><strong>第 1–4 周｜打基础 &#x26; 工具化</strong></p>
+        <ul>
+          <li>目标：掌握张量/自动微分/训练循环；完成 2 个可跑的玩具任务（如 MNIST 分类、IMDb 文本分类）。</li>
+          <li>资源：D2L 对应章节 + PyTorch 官方教程；搭好环境、Git 规范、实验记录模版。(<a href="https://www.d2l.ai/chapter_introduction/index.html?utm_source=chatgpt.com">d2l.ai</a>)</li>
+          <li>交付物：2 个干净仓库（README、环境文件、可一键复现实验脚本）。</li>
+        </ul>
+        <p><strong>第 5–8 周｜核心模型 + 小项目</strong></p>
+        <ul>
+          <li>目标：读 8–12 篇“方法/系统/数据”三类论文；从零实现一个小型 CNN/Transformer，并做 3 种训练技巧对比。</li>
+          <li>交付物：<strong>基线复现报告</strong>（数据/指标/方差/训练曲线）+ 误差分析（失败案例）。</li>
+        </ul>
+        <p><strong>第 9–12 周｜选方向 &#x26; 复现基线</strong></p>
+        <ul>
+          <li>目标：确定细分题目（例如“小数据目标检测的高效微调”、“多模态小模型对齐”或“低算力扩散蒸馏”之一）。</li>
+          <li>行动：选择一篇近 1–2 年的主线论文，做<strong>完全复现</strong>（含随机种子、日志、评测脚本）。</li>
+          <li>交付物：<strong>复现报告 + 复现实验包</strong>（匿名版，按顶会清单准备）。(<a href="https://neurips.cc/public/guides/PaperChecklist?utm_source=chatgpt.com">NeurIPS</a>)</li>
+        </ul>
+        <p><strong>第 13–16 周｜提出可度量的小改进</strong></p>
+        <ul>
+          <li>目标：在“数据/目标函数/结构/训练策略/评估（<strong>DOATE</strong>）”五维里挑<strong>一个</strong>可控变量；做<strong>最小可行改进（MVP）</strong>。</li>
+          <li>行动：严谨对照 + 消融（≥3 组），记录开销（显存/时延/能耗）。</li>
+        </ul>
+        <p><strong>第 17–20 周｜打磨实证与可复现</strong></p>
+        <ul>
+          <li>目标：完善<strong>鲁棒性/泛化/效率</strong>维度，增加跨数据集或跨任务验证；补负面结果与失败分析。</li>
+          <li>行动：清理代码，整理 <strong>Repro 清单</strong>、数据卡/模型卡，撰写附录（细节足以“他人独立复现”）。(<a href="https://neurips.cc/Conferences/2025/CallForPapers?utm_source=chatgpt.com">NeurIPS</a>)</li>
+        </ul>
+        <p><strong>第 21–24 周｜写作与投递</strong></p>
+        <ul>
+          <li>目标：完成论文初稿 → 小组互评 → 改稿 → 目标会议模板与清单对齐 → 提交。</li>
+          <li>行动：严格按“题目—摘要—引言—相关—方法—实验—讨论（局限/社会影响）—结论—附录—代码”结构；逐项对照顶会伦理与可复现要求。(<a href="https://neurips.cc/public/EthicsGuidelines?utm_source=chatgpt.com">NeurIPS</a>)</li>
+        </ul>
+        <hr>
+        <h1 id="四读论文与调研方法立刻可用"><a aria-hidden="true" tabindex="-1" href="#四读论文与调研方法立刻可用" class="anchor"><span class="icon icon-link"></span></a>四、读论文与调研方法（立刻可用）</h1>
+        <ul>
+          <li><strong>三遍法</strong>：①鸟瞰（题目/摘要/导言/结论/图表）②结构细读（方法假设、实验设计、统计显著性、威胁与局限）③重建细节（公式/实现/实验脚本）。每篇做 150–300 字“证据摘录”。(<a href="https://ccr.sigcomm.org/online/files/p83-keshavA.pdf?utm_source=chatgpt.com">ccr.sigcomm.org</a>)</li>
+          <li><strong>文献地图</strong>：把论文按“任务×方法×数据×指标×资源”建表；每周滚动更新“必须读/可略读/可跳过”清单。</li>
+          <li><strong>调研效率</strong>：先找年度报告/综述（AI Index、State of AI），再追溯关键工作与开源实现。(<a href="https://hai-production.s3.amazonaws.com/files/hai_ai_index_report_2025.pdf?utm_source=chatgpt.com">hai-production.s3.amazonaws.com</a>)</li>
+        </ul>
+        <hr>
+        <h1 id="五工程与可复现投稿红线"><a aria-hidden="true" tabindex="-1" href="#五工程与可复现投稿红线" class="anchor"><span class="icon icon-link"></span></a>五、工程与可复现（投稿红线）</h1>
+        <ul>
+          <li><strong>环境固定</strong>：requirements/conda + 固定随机种子，保存日志/曲线；提供一键脚本与最小可运行样例（subset）。</li>
+          <li><strong>指标与统计</strong>：报告均值±方差、置信区间/检验方法；给出参数量、FLOPs、吞吐/时延与显存。</li>
+          <li><strong>伦理与风险</strong>：数据合规、泄露与偏见评估、潜在负面影响叙述，按顶会 Checklist/Ethics 对照。(<a href="https://neurips.cc/public/guides/PaperChecklist?utm_source=chatgpt.com">NeurIPS</a>)</li>
+        </ul>
+        <hr>
+        <h1 id="六资源与生态主用--备选"><a aria-hidden="true" tabindex="-1" href="#六资源与生态主用--备选" class="anchor"><span class="icon icon-link"></span></a>六、资源与生态（“主用 + 备选”）</h1>
+        <ul>
+          <li><strong>主用</strong>：PyTorch（教程与生态全面）。(<a href="https://pytorch.org/?utm_source=chatgpt.com">PyTorch</a>)</li>
+          <li><strong>备选/补充</strong>：TensorFlow（部署生态强）、JAX（科研友好的函数变换与编译）。(<a href="https://www.tensorflow.org/?utm_source=chatgpt.com">tensorflow.org</a>)</li>
+          <li><strong>国内生态</strong>：PaddlePaddle、MindSpore（若项目与算子/硬件绑定国内平台，需同步学习）。(<a href="https://www.paddlepaddle.org.cn/?utm_source=chatgpt.com">paddlepaddle.org.cn</a>)</li>
+          <li><strong>教材</strong>：D2L（免费、可跑），与导师/课程指定资料配合。(<a href="https://www.d2l.ai/chapter_introduction/index.html?utm_source=chatgpt.com">d2l.ai</a>)</li>
+          <li><strong>投向参考</strong>：CCF 推荐目录（锁定你方向的 A 类会议/期刊）。(<a href="https://www.ccf.org.cn/Academic_Evaluation/By_category/?utm_source=chatgpt.com">ccf.org.cn</a>)</li>
+        </ul>
+        <hr>
+        <h1 id="七可量化的阶段性-kpi确保产出导向"><a aria-hidden="true" tabindex="-1" href="#七可量化的阶段性-kpi确保产出导向" class="anchor"><span class="icon icon-link"></span></a>七、可量化的阶段性 KPI（确保“产出导向”）</h1>
+        <ul>
+          <li><strong>12 周</strong>：≥1 个完整复现仓库；一份对照+消融报告；读完 ≥25 篇论文（3-pass 笔记齐全）。</li>
+          <li><strong>24 周</strong>：<strong>一篇可投论文初稿</strong> + 公开代码与复现实验包；若时间允许，平行准备 workshop/short paper。</li>
+          <li><strong>过程指标</strong>：每周 2–3 篇论文读写、1 次实验里程碑复盘；所有图表可追溯到脚本与日志；Checklist 全项打钩或合理说明。(<a href="https://neurips.cc/Conferences/2025/CallForPapers?utm_source=chatgpt.com">NeurIPS</a>)</li>
+        </ul>
         <div class="previous"><span></span><a class="next" href="../ChatGPT/prompt.html"><span>Prompt Engineering
 </span><svg viewBox="0 0 1024 1024" width="16" height="16" fill="currentColor">
               <path d="M544 522.666667c0-8.533333-4.266667-17.066667-10.666667-23.466667L192 189.866667c-12.8-12.8-34.133333-10.666667-44.8 2.133333-12.8 12.8-10.666667 34.133333 2.133333 44.8l315.733334 285.866667L149.333333 808.533333c-12.8 12.8-14.933333 32-2.133333 44.8 6.4 6.4 14.933333 10.666667 23.466667 10.666667 8.533333 0 14.933333-2.133333 21.333333-8.533333l341.333333-309.333334c6.4-6.4 10.666667-14.933333 10.666667-23.466666z"></path>
               <path d="M864 499.2l-341.333333-309.333333c-12.8-12.8-34.133333-10.666667-44.8 2.133333-12.8 12.8-10.666667 34.133333 2.133333 44.8l315.733333 285.866667-315.733333 285.866666c-12.8 12.8-14.933333 32-2.133333 44.8 6.4 6.4 14.933333 10.666667 23.466666 10.666667 8.533333 0 14.933333-2.133333 21.333334-8.533333l341.333333-309.333334c6.4-6.4 10.666667-14.933333 10.666667-23.466666 0-8.533333-4.266667-17.066667-10.666667-23.466667z"></path>
             </svg></a></div>
-        <section class="article-footer"><a href="https://github.com/skytzh/docs/blob/main/docs\git\git.md" class="edit-button" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <section class="article-footer"><a href="https://github.com/skytzh/docs/blob/main/docs\QAQ\DeepLearning学习路线.md" class="edit-button" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
             </svg>
 <span>Edit this page on GitHub</span>
 </a><span class="atime">2025/10/23</span></section>
       </markdown-style>
-      <nav class="tocs">
-        <aside class="inner toc">
-          <ol class="tocs-list">
-            <li><a href="#git-基础用法" class="tocs-link">Git 基础用法</a></li>
-            <li><a href="#git更改远程仓库地址" class="tocs-link">Git更改远程仓库地址</a></li>
-            <li><a href="#git回滚" class="tocs-link">Git回滚</a>
-              <ol class="tocs-list is-collapsed">
-                <li><a href="#1-使用-git-reset" class="tocs-link">1. 使用 git reset</a></li>
-                <li><a href="#2-使用-git-revert" class="tocs-link">2. 使用 git revert</a></li>
-                <li><a href="#3-使用-git-checkout" class="tocs-link">3. 使用 git checkout</a></li>
-              </ol>
-            </li>
-          </ol>
-        </aside>
-      </nav>
     </div>
     <script src="../js/demo-preview.js?v=1.31.0"></script>
     <div class="footer warpper">Released under the MIT License. Copyright © 2024 relyonheaven<br>Generated by <a href="https://github.com/jaywcjlove/idoc" target="_blank">idoc</a></div>
