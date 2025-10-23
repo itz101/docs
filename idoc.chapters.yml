@@ -1,11 +1,20 @@
-- ChatGPT/prompt.md: Prompt Engineering
+- ChatGPT: Prompt Engineering
+- ChatGPT/prompt.md: Prompts
 
-- Bookmark/bookmark.md: bookmark
+- Bookmark: Bookmark Management
+- Bookmark/bookmark.md: Bookmark
 
-- 算法(C++)/算法.md: 算法
+- Algorithm: Algorithms
+- Algorithm/template.md: Template
 
-- Docker/指令.md: Docker
+- Docker: Docker
+- Docker/docker.md: Docker Basics
 
-- git/git.md: Git
+- Git: Git
+- Git/git.md: Git Basics
 
-- AI/stable-diffusion.md: Stable Diffusion
+- AIGC: AI Generated Content
+- AIGC/stable-diffusion.md: Stable Diffusion
+
+- QAQ: GPT-5 Thinking
+- QAQ/DeepLearning-Path.md: Learning Path
