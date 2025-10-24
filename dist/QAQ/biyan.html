@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>一、把脉：国内外研究格局（用来“定向”而不是背新闻） HelloWorld</title>
-    <meta name="description" content="===">
+    <meta name="description" content="先给你一个直观结论（后面有依据与做法）：">
     <link rel="stylesheet" type="text/css" href="../css/main.css?v=1.34.2">
     <link rel="stylesheet" type="text/css" href="../css/tocbot.css?v=1.34.2">
     <link rel="stylesheet" type="text/css" href="../css/media.css?v=1.34.2">
@@ -43,80 +43,112 @@
             <label>Algorithms</label>
             <a href="../Algorithm/template.html" class="">Template</a>
             <label>Docker</label>
-            <a href="docker.html" class="">Docker Basics</a>
+            <a href="../Docker/docker.html" class="">Docker Basics</a>
             <label>Git</label>
             <a href="../Git/git.html" class="">Git Basics</a>
             <label>AI Generated Content</label>
             <a href="../AIGC/stable-diffusion.html" class="">Stable Diffusion</a>
             <label>GPT-5 Thinking</label>
-            <a href="../QAQ/DeepLearning-Path.html" class="">Learning Path</a>
-            <a href="../QAQ/biyan.html" class="">Rhinitis</a>
+            <a href="DeepLearning-Path.html" class="">Learning Path</a>
+            <a href="biyan.html" class="">Rhinitis</a>
           </div>
         </aside>
       </div>
       <markdown-style>
-        <h2 id="docker"><a aria-hidden="true" tabindex="-1" href="#docker" class="anchor"><span class="icon icon-link"></span></a>Docker</h2>
-        <h3 id="拉取镜像"><a aria-hidden="true" tabindex="-1" href="#拉取镜像" class="anchor"><span class="icon icon-link"></span></a>拉取镜像</h3>
-        <pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line line-number" line="1">$ <span class="token function">docker</span> pull ubuntu:latest
-</span></code><input type="hidden" value="$ docker pull ubuntu:latest
-"><div onclick="copied(this)" class="copied"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
-        <h3 id="运行镜像"><a aria-hidden="true" tabindex="-1" href="#运行镜像" class="anchor"><span class="icon icon-link"></span></a>运行镜像</h3>
-        <pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line line-number" line="1"><span class="token function">docker</span> run <span class="token operator">&#x3C;</span>image_name<span class="token operator">></span>
-</span></code><input type="hidden" value="docker run <image_name>
-"><div onclick="copied(this)" class="copied"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
-        <h3 id="查看容器"><a aria-hidden="true" tabindex="-1" href="#查看容器" class="anchor"><span class="icon icon-link"></span></a>查看容器</h3>
-        <pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line line-number" line="1"><span class="token comment">#运行中的容器</span>
-</span><span class="code-line line-number" line="2"><span class="token function">docker</span> <span class="token function">ps</span>
-</span><span class="code-line line-number" line="3"><span class="token function">docker</span> container <span class="token function">ls</span>
-</span><span class="code-line line-number" line="4">
-</span><span class="code-line line-number" line="5"><span class="token comment">#存在的所有容器</span>
-</span><span class="code-line line-number" line="6"><span class="token function">docker</span> <span class="token function">ps</span> <span class="token parameter variable">-a</span>
-</span></code><input type="hidden" value="#运行中的容器
-docker ps
-docker container ls
-
-#存在的所有容器
-docker ps -a
-"><div onclick="copied(this)" class="copied"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
-        <h3 id="映射主机端口"><a aria-hidden="true" tabindex="-1" href="#映射主机端口" class="anchor"><span class="icon icon-link"></span></a>映射主机端口</h3>
-        <pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line line-number" line="1"><span class="token function">docker</span> run <span class="token parameter variable">-p</span> <span class="token number">8080</span>:80 nginx
-</span></code><input type="hidden" value="docker run -p 8080:80 nginx
-"><div onclick="copied(this)" class="copied"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
-        <h3 id="挂载volume"><a aria-hidden="true" tabindex="-1" href="#挂载volume" class="anchor"><span class="icon icon-link"></span></a>挂载volume</h3>
-        <pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line line-number" line="1"><span class="token function">docker</span> run <span class="token parameter variable">-v</span> /local/path:/mounted/volume/path <span class="token parameter variable">-it</span> ubuntu /bin/bash
-</span></code><input type="hidden" value="docker run -v /local/path:/mounted/volume/path -it ubuntu /bin/bash
-"><div onclick="copied(this)" class="copied"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
-        <h3 id="交互容器"><a aria-hidden="true" tabindex="-1" href="#交互容器" class="anchor"><span class="icon icon-link"></span></a>交互容器</h3>
-        <pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line line-number" line="1"><span class="token function">docker</span> run <span class="token parameter variable">-it</span> ubuntu /bin/bash
-</span></code><input type="hidden" value="docker run -it ubuntu /bin/bash
-"><div onclick="copied(this)" class="copied"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
-        <h3 id="本地文件上传到容器内"><a aria-hidden="true" tabindex="-1" href="#本地文件上传到容器内" class="anchor"><span class="icon icon-link"></span></a>本地文件上传到容器内</h3>
-        <pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line line-number" line="1"><span class="token function">docker</span> <span class="token function">cp</span> /dir/a.txt d3a46083eadf:/usr/src/a.txt
-</span></code><input type="hidden" value="docker cp /dir/a.txt d3a46083eadf:/usr/src/a.txt
-"><div onclick="copied(this)" class="copied"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
+        <p>先给你一个直观结论（后面有依据与做法）：</p>
+        <ul>
+          <li><strong>要长期、安全地缩小鼻甲、缓解慢性鼻塞，优先选用糠酸莫米松等“鼻用糖皮质激素喷雾”（INCS）。*<em>它能抑制黏膜慢性炎症、逐步缩小肥大的鼻甲，见效通常*</em>1–2天起步、1–2周达到最佳</strong>，且<strong>全身吸收极低（&#x3C;1%）</strong>，按说明用很安全。(<a href="https://www.entnet.org/wp-content/uploads/files/uploads/PracticeManagement/Resources/_files/feb2015arguidelinepressmaterials_0.pdf?utm_source=chatgpt.com">entnet.org</a>)</li>
+          <li><strong>盐酸羟甲唑啉</strong>这类血管收缩剂适合<strong>短期“救急”</strong>（感冒高峰、临时航班等），<strong>连续用超过3–5天易导致“药物性鼻炎”（反跳性鼻塞）</strong>，长期控制效果差。(<a href="https://www.ncbi.nlm.nih.gov/books/NBK538318/">国家生物技术信息中心</a>)</li>
+          <li>
+            <strong>“阿莫西林+香油涂鼻”的网传偏方不可信、且有风险</strong>：
+            ① 阿莫西林并<strong>不适合</strong>这样在鼻腔局部滥用，可能致<strong>过敏/致敏</strong>并促进<strong>耐药</strong>；② <strong>油类入鼻</strong>可误吸入肺，已被多篇病例报道为<strong>外源性脂性肺炎</strong>的诱因。(<a href="https://www.ncbi.nlm.nih.gov/books/NBK482250/?utm_source=chatgpt.com">国家生物技术信息中心</a>)
+          </li>
+        </ul>
+        <hr>
+        <h2 id="为什么大家谈激素色变而莫米松又相对安全"><a aria-hidden="true" tabindex="-1" href="#为什么大家谈激素色变而莫米松又相对安全" class="anchor"><span class="icon icon-link"></span></a>为什么大家“谈激素色变”，而莫米松又相对安全？</h2>
+        <p>公众担心的是<strong>全身激素副作用</strong>（比如长期口服/注射导致的代谢与骨密度影响）。但<strong>鼻喷用的莫米松</strong>属于<strong>局部给药</strong>，<strong>血药暴露极低（生物利用度&#x3C;1%）</strong>，在推荐剂量下对<strong>肾上腺轴</strong>影响不显著；最常见的是<strong>鼻腔局部不适/少量鼻出血</strong>，正确喷法可明显降低这些风险。</p>
+        <blockquote>
+          <p>小贴士：达最佳疗效需要<strong>坚持每日规律使用</strong>，别把它当成“立竿见影”的通鼻喷。(<a href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2018/020762s053lbl.pdf?utm_source=chatgpt.com">FDA Access Data</a>)</p>
+        </blockquote>
+        <hr>
+        <h2 id="哪种药物更适合鼻甲肥大导致的慢性鼻炎"><a aria-hidden="true" tabindex="-1" href="#哪种药物更适合鼻甲肥大导致的慢性鼻炎" class="anchor"><span class="icon icon-link"></span></a>哪种药物更适合“鼻甲肥大导致的慢性鼻炎”？</h2>
+        <ul>
+          <li><strong>鼻用激素喷雾（如莫米松）</strong>：<strong>一线长期治疗</strong>，能减轻慢性炎症并<strong>缩小鼻甲体积</strong>，改善通气，是鼻甲肥大的核心药物治疗手段。(<a href="https://www.entnet.org/wp-content/uploads/files/uploads/PracticeManagement/Resources/_files/feb2015arguidelinepressmaterials_0.pdf?utm_source=chatgpt.com">entnet.org</a>)</li>
+          <li><strong>血管收缩剂（羟甲唑啉等）</strong>：<strong>几分钟见效，但只治表面充血</strong>，<strong>连续>3–5天</strong>容易反跳更堵，<strong>不适合长期控制</strong>。(<a href="https://www.ncbi.nlm.nih.gov/books/NBK538318/">国家生物技术信息中心</a>)</li>
+        </ul>
+        <blockquote>
+          <p>若合并<strong>结构性问题</strong>（如你提到的<strong>鼻中隔偏曲</strong>），药物能缓解但未必“校正”结构；在<strong>规范药物治疗8–12周</strong>仍明显堵、或夜间呼吸/睡眠受影响时，耳鼻喉科常会评估<strong>下鼻甲手术/鼻中隔成形</strong>是否必要，研究显示<strong>合并鼻甲手术</strong>较单纯鼻中隔手术<strong>症状改善更多</strong>。(<a href="https://jamanetwork.com/journals/jamaotolaryngology/fullarticle/2798896?utm_source=chatgpt.com">JAMA Network</a>)</p>
+        </blockquote>
+        <hr>
+        <h2 id="正确用药与配套措施"><a aria-hidden="true" tabindex="-1" href="#正确用药与配套措施" class="anchor"><span class="icon icon-link"></span></a>正确用药与配套措施</h2>
+        <p><strong>鼻用莫米松如何用得更安全有效：</strong></p>
+        <ol>
+          <li><strong>先冲洗后喷药</strong>：用<strong>等渗盐水</strong>（水源要<strong>蒸馏/无菌或煮沸冷却</strong>，切勿直接自来水）清洗，再喷激素，避免把药液冲掉。(<a href="https://www.fda.gov/consumers/consumer-updates/rinsing-your-sinuses-neti-pots-safe?utm_source=chatgpt.com">U.S. Food and Drug Administration</a>)</li>
+          <li><strong>喷法关键点</strong>：头<strong>微前倾</strong>，<strong>用右手喷左鼻孔/左手喷右鼻孔</strong>，<strong>把喷嘴朝外侧鼻翼方向，避开鼻中隔</strong>，轻轻吸气，喷后别猛吸。这样既让药液覆盖到下鼻甲，又能减少鼻中隔刺激和流鼻血。(<a href="https://www.nm.org/-/media/northwestern/resources/patients-and-visitors/patient-education/medication/northwestern-medicine-how-to-use-nasal-sprays.pdf?utm_source=chatgpt.com">Northwestern Medicine</a>)</li>
+          <li><strong>期望与剂量</strong>：多数人在<strong>1–2天</strong>有改善，<strong>1–2周</strong>达峰。成人常用量为<strong>每日一次、每侧1–2喷</strong>（依说明书/医嘱），症状受控可<strong>减量维持</strong>。</li>
+        </ol>
+        <p><strong>其它可加用：</strong></p>
+        <ul>
+          <li><strong>生理盐水冲洗</strong>：长期慢性鼻炎/鼻窦炎的有益辅疗，注意<strong>安全水源</strong>。(<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8901942/?utm_source=chatgpt.com">PMC</a>)</li>
+          <li><strong>若以清水样流涕为主</strong>（你现在偏干不一定需要）：<strong>异丙托溴铵鼻喷</strong>能明显减少流涕。(<a href="https://pubmed.ncbi.nlm.nih.gov/7751528/?utm_source=chatgpt.com">PubMed</a>)</li>
+        </ul>
+        <hr>
+        <h2 id="网传偏方的科学性与风险"><a aria-hidden="true" tabindex="-1" href="#网传偏方的科学性与风险" class="anchor"><span class="icon icon-link"></span></a>网传偏方的科学性与风险</h2>
+        <ul>
+          <li><strong>阿莫西林研粉+香油涂鼻</strong>：
+            <ul>
+              <li><strong>缺乏循证依据</strong>，鼻腔并非阿莫西林的推荐给药途径；随意局部使用可引发<strong>接触致敏/过敏</strong>，今后需要正规抗生素时<strong>风险更高</strong>，也不利于<strong>抗菌药物合理使用</strong>。(<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8822519/?utm_source=chatgpt.com">PMC</a>)</li>
+              <li><strong>油类入鼻</strong>存在<strong>误吸</strong>风险，已多次被报告可导致<strong>外源性脂性肺炎</strong>（包括<strong>芝麻油</strong>相关病例）。(<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8568072/?utm_source=chatgpt.com">PMC</a>)</li>
+              <li>即便个别小研究提示<strong>芝麻油</strong>可缓解鼻腔干燥，其<strong>潜在误吸危害</strong>与<strong>缺乏标准化</strong>的家庭用法，使其<strong>不推荐</strong>作为常规疗法；更安全的替代是<strong>水性保湿凝胶/加湿器</strong>配合<strong>规范盐水冲洗</strong>。(<a href="https://jamanetwork.com/journals/jamaotolaryngology/fullarticle/482595?utm_source=chatgpt.com">JAMA Network</a>)</li>
+            </ul>
+          </li>
+        </ul>
+        <hr>
+        <h2 id="结合你的情况我会这样一步到位地安排"><a aria-hidden="true" tabindex="-1" href="#结合你的情况我会这样一步到位地安排" class="anchor"><span class="icon icon-link"></span></a>结合你的情况，我会这样一步到位地安排</h2>
+        <ol>
+          <li><strong>立即把羟甲唑啉“收心”：*<em>如果已连续使用，尽快*</em>停用</strong>或<strong>在医生指导下逐步减停</strong>，同时<strong>启动鼻用莫米松</strong>，以缓解撤药期的反跳堵塞。(<a href="https://www.ncbi.nlm.nih.gov/books/NBK538318/">国家生物技术信息中心</a>)</li>
+          <li><strong>规范莫米松疗程</strong>：按说明<strong>每日规律喷</strong>，<strong>至少坚持8–12周</strong>评估疗效。若有效可转入<strong>最低维持量</strong>。</li>
+          <li><strong>配合安全盐水冲洗</strong>（蒸馏/煮沸冷却水），每日1–2次，缓解干痂与分泌物。(<a href="https://www.fda.gov/consumers/consumer-updates/rinsing-your-sinuses-neti-pots-safe?utm_source=chatgpt.com">U.S. Food and Drug Administration</a>)</li>
+          <li><strong>避免油类入鼻与网传偏方</strong>；若鼻腔干，可考虑<strong>水性保湿凝胶/环境加湿</strong>而非油滴鼻。(<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4628246/?utm_source=chatgpt.com">PMC</a>)</li>
+          <li><strong>复诊评估结构因素</strong>：若按上面做满<strong>8–12周</strong>仍明显单侧（右侧）堵，和医生讨论<strong>鼻甲手术±鼻中隔成形</strong>的指征与收益。(<a href="https://jamanetwork.com/journals/jamaotolaryngology/fullarticle/2798896?utm_source=chatgpt.com">JAMA Network</a>)</li>
+        </ol>
+        <hr>
+        <h2 id="何时需要尽快就医"><a aria-hidden="true" tabindex="-1" href="#何时需要尽快就医" class="anchor"><span class="icon icon-link"></span></a>何时需要尽快就医</h2>
+        <ul>
+          <li>鼻出血频繁/难止、鼻内剧痛、喷后明显刺痛或血性分泌物增多；</li>
+          <li>面颊或前额持续胀痛、发热、脓涕加重（考虑细菌继发感染）；</li>
+          <li>既往对青霉素/阿莫西林<strong>过敏</strong>史（切勿自行尝试任何含阿莫西林偏方）。(<a href="https://www.ncbi.nlm.nih.gov/books/NBK482250/?utm_source=chatgpt.com">国家生物技术信息中心</a>)</li>
+        </ul>
+        <hr>
+        <h3 id="参考依据"><a aria-hidden="true" tabindex="-1" href="#参考依据" class="anchor"><span class="icon icon-link"></span></a>参考依据</h3>
+        <ul>
+          <li>过敏性鼻炎一线推荐<strong>鼻用激素</strong>与喷用要点：AAO-HNS/AAAAI 指南；莫米松起效与安全性（<strong>&#x3C;1%全身吸收</strong>）见 FDA 说明书。(<a href="https://www.entnet.org/wp-content/uploads/files/uploads/PracticeManagement/Resources/_files/feb2015arguidelinepressmaterials_0.pdf?utm_source=chatgpt.com">entnet.org</a>)</li>
+          <li><strong>血管收缩剂</strong>反跳性鼻塞与<strong>限用3–5天</strong>：StatPearls。(<a href="https://www.ncbi.nlm.nih.gov/books/NBK538318/">国家生物技术信息中心</a>)</li>
+          <li><strong>盐水冲洗安全水源</strong>：CDC/FDA。(<a href="https://www.cdc.gov/naegleria/prevention/sinus-rinsing.html?utm_source=chatgpt.com">疾病控制与预防中心</a>)</li>
+          <li><strong>油入鼻致脂性肺炎</strong>：多篇病例与综述（含芝麻油）。(<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8568072/?utm_source=chatgpt.com">PMC</a>)</li>
+        </ul>
         <div class="previous"><span></span><a class="next" href="../ChatGPT/prompt.html"><span>Prompts
 </span><svg viewBox="0 0 1024 1024" width="16" height="16" fill="currentColor">
               <path d="M544 522.666667c0-8.533333-4.266667-17.066667-10.666667-23.466667L192 189.866667c-12.8-12.8-34.133333-10.666667-44.8 2.133333-12.8 12.8-10.666667 34.133333 2.133333 44.8l315.733334 285.866667L149.333333 808.533333c-12.8 12.8-14.933333 32-2.133333 44.8 6.4 6.4 14.933333 10.666667 23.466667 10.666667 8.533333 0 14.933333-2.133333 21.333333-8.533333l341.333333-309.333334c6.4-6.4 10.666667-14.933333 10.666667-23.466666z"></path>
               <path d="M864 499.2l-341.333333-309.333333c-12.8-12.8-34.133333-10.666667-44.8 2.133333-12.8 12.8-10.666667 34.133333 2.133333 44.8l315.733333 285.866667-315.733333 285.866666c-12.8 12.8-14.933333 32-2.133333 44.8 6.4 6.4 14.933333 10.666667 23.466666 10.666667 8.533333 0 14.933333-2.133333 21.333334-8.533333l341.333333-309.333334c6.4-6.4 10.666667-14.933333 10.666667-23.466666 0-8.533333-4.266667-17.066667-10.666667-23.466667z"></path>
             </svg></a></div>
-        <section class="article-footer"><a href="https://github.com/skytzh/docs/blob/main/docs\Docker\docker.md" class="edit-button" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <section class="article-footer"><a href="https://github.com/skytzh/docs/blob/main/docs\QAQ\biyan.md" class="edit-button" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
             </svg>
 <span>Edit this page on GitHub</span>
-</a><span class="atime">2025/10/23</span></section>
+</a><span class="atime">2025/10/24</span></section>
       </markdown-style>
       <nav class="tocs">
         <aside class="inner toc">
           <ol class="tocs-list">
-            <li><a href="#docker" class="tocs-link">Docker</a>
+            <li><a href="#为什么大家谈激素色变而莫米松又相对安全" class="tocs-link">为什么大家“谈激素色变”，而莫米松又相对安全？</a></li>
+            <li><a href="#哪种药物更适合鼻甲肥大导致的慢性鼻炎" class="tocs-link">哪种药物更适合“鼻甲肥大导致的慢性鼻炎”？</a></li>
+            <li><a href="#正确用药与配套措施" class="tocs-link">正确用药与配套措施</a></li>
+            <li><a href="#网传偏方的科学性与风险" class="tocs-link">网传偏方的科学性与风险</a></li>
+            <li><a href="#结合你的情况我会这样一步到位地安排" class="tocs-link">结合你的情况，我会这样一步到位地安排</a></li>
+            <li><a href="#何时需要尽快就医" class="tocs-link">何时需要尽快就医</a>
               <ol class="tocs-list is-collapsed">
-                <li><a href="#拉取镜像" class="tocs-link">拉取镜像</a></li>
-                <li><a href="#运行镜像" class="tocs-link">运行镜像</a></li>
-                <li><a href="#查看容器" class="tocs-link">查看容器</a></li>
-                <li><a href="#映射主机端口" class="tocs-link">映射主机端口</a></li>
-                <li><a href="#挂载volume" class="tocs-link">挂载volume</a></li>
-                <li><a href="#交互容器" class="tocs-link">交互容器</a></li>
-                <li><a href="#本地文件上传到容器内" class="tocs-link">本地文件上传到容器内</a></li>
+                <li><a href="#参考依据" class="tocs-link">参考依据</a></li>
               </ol>
             </li>
           </ol>
